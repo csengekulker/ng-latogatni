@@ -1,0 +1,24 @@
+
+<div class="text-center">
+
+    <h1 class="title">Telep</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Megye</th>
+                <th>Terület (km²)</th>
+                <th>Népesség (fő)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data" >
+                <td>{{row.name}}</td>
+                <td>{{row.county}}</td>
+                <td>{{row.area}}</td>
+                <td>{{row.population}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
